@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14A261i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="NN8-Es-Yji">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="qNN-rV-99G">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BdL-ml-wzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="NN8-Es-Yji" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hx4-pY-ZUc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YxJ-Lj-HpV" kind="relationship" relationship="rootViewController" id="J9v-5Z-c5Z"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-48" y="320"/>
+        </scene>
+        <!--Media View Controller-->
+        <scene sceneID="uJi-72-ge8">
+            <objects>
+                <viewController id="YxJ-Lj-HpV" customClass="PBMediaViewController" customModule="Playback" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bNh-4R-S5B"/>
+                        <viewControllerLayoutGuide type="bottom" id="F76-lf-dlB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gZe-Vr-cwB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView appearanceType="aqua" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YaC-xl-XAX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hZ7-Gk-UpS">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Lof-LK-r1p">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YaC-xl-XAX" firstAttribute="top" secondItem="gZe-Vr-cwB" secondAttribute="top" id="MBm-dY-dP3"/>
+                            <constraint firstItem="F76-lf-dlB" firstAttribute="top" secondItem="YaC-xl-XAX" secondAttribute="bottom" id="Qb2-Wu-oFZ"/>
+                            <constraint firstItem="YaC-xl-XAX" firstAttribute="leading" secondItem="gZe-Vr-cwB" secondAttribute="leading" id="Yrz-0O-oK6"/>
+                            <constraint firstAttribute="trailing" secondItem="YaC-xl-XAX" secondAttribute="trailing" id="kpK-3c-UPv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rUF-uZ-GON"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xlh-SR-9sp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="334"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

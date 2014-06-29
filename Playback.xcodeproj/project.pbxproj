@@ -11,6 +11,9 @@
 		05403840195F94180005B06E /* Playback.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0540383E195F94180005B06E /* Playback.xcdatamodeld */; };
 		05403842195F94180005B06E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05403841195F94180005B06E /* Images.xcassets */; };
 		0540384E195F94180005B06E /* PlaybackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0540384D195F94180005B06E /* PlaybackTests.swift */; };
+		05403858195F944D0005B06E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05403857195F944D0005B06E /* MainStoryboard_iPhone.storyboard */; };
+		0540385A195F95690005B06E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05403859195F95690005B06E /* MainStoryboard_iPad.storyboard */; };
+		0540385E195F97680005B06E /* PBMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0540385D195F97680005B06E /* PBMediaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,9 @@
 		05403847195F94180005B06E /* PlaybackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaybackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0540384C195F94180005B06E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0540384D195F94180005B06E /* PlaybackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackTests.swift; sourceTree = "<group>"; };
+		05403857195F944D0005B06E /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		05403859195F95690005B06E /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		0540385D195F97680005B06E /* PBMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBMediaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +79,14 @@
 		05403839195F94180005B06E /* Playback */ = {
 			isa = PBXGroup;
 			children = (
+				0540385C195F95F60005B06E /* Data */,
+				0540385B195F95F10005B06E /* Controller */,
 				0540383C195F94180005B06E /* AppDelegate.swift */,
 				05403841195F94180005B06E /* Images.xcassets */,
 				0540383E195F94180005B06E /* Playback.xcdatamodeld */,
 				0540383A195F94180005B06E /* Supporting Files */,
+				05403857195F944D0005B06E /* MainStoryboard_iPhone.storyboard */,
+				05403859195F95690005B06E /* MainStoryboard_iPad.storyboard */,
 			);
 			path = Playback;
 			sourceTree = "<group>";
@@ -104,6 +114,21 @@
 				0540384C195F94180005B06E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0540385B195F95F10005B06E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0540385D195F97680005B06E /* PBMediaViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0540385C195F95F60005B06E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +175,7 @@
 		0540382F195F94180005B06E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PB;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Playback;
 				TargetAttributes = {
@@ -185,6 +211,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0540385A195F95690005B06E /* MainStoryboard_iPad.storyboard in Resources */,
+				05403858195F944D0005B06E /* MainStoryboard_iPhone.storyboard in Resources */,
 				05403842195F94180005B06E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,6 +233,7 @@
 			files = (
 				05403840195F94180005B06E /* Playback.xcdatamodeld in Sources */,
 				0540383D195F94180005B06E /* AppDelegate.swift in Sources */,
+				0540385E195F97680005B06E /* PBMediaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
