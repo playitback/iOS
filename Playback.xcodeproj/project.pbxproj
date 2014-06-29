@@ -14,6 +14,58 @@
 		05403858195F944D0005B06E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05403857195F944D0005B06E /* MainStoryboard_iPhone.storyboard */; };
 		0540385A195F95690005B06E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05403859195F95690005B06E /* MainStoryboard_iPad.storyboard */; };
 		0540385E195F97680005B06E /* PBMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0540385D195F97680005B06E /* PBMediaViewController.swift */; };
+		05403862196074E60005B06E /* PBDBSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05403861196074E60005B06E /* PBDBSyncManager.swift */; };
+		054038BB196077D10005B06E /* CHANGELOG.mdown in Sources */ = {isa = PBXBuildFile; fileRef = 05403869196077D10005B06E /* CHANGELOG.mdown */; };
+		054038BC196077D10005B06E /* com.dropbox.Dropbox.docset in Resources */ = {isa = PBXBuildFile; fileRef = 0540386A196077D10005B06E /* com.dropbox.Dropbox.docset */; };
+		054038BD196077D10005B06E /* Dropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0540386B196077D10005B06E /* Dropbox.framework */; };
+		054038BE196077D10005B06E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05403875196077D10005B06E /* AppDelegate.m */; };
+		054038BF196077D10005B06E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05403876196077D10005B06E /* Default-568h@2x.png */; };
+		054038C0196077D10005B06E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 05403877196077D10005B06E /* Default.png */; };
+		054038C1196077D10005B06E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05403878196077D10005B06E /* Default@2x.png */; };
+		054038C2196077D10005B06E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05403879196077D10005B06E /* InfoPlist.strings */; };
+		054038C3196077D10005B06E /* HelloDropbox-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0540387B196077D10005B06E /* HelloDropbox-Info.plist */; };
+		054038C4196077D10005B06E /* HelloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0540387E196077D10005B06E /* HelloViewController.m */; };
+		054038C5196077D10005B06E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0540387F196077D10005B06E /* main.m */; };
+		054038C6196077D10005B06E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05403881196077D10005B06E /* Default-568h@2x.png */; };
+		054038C7196077D10005B06E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05403882196077D10005B06E /* InfoPlist.strings */; };
+		054038C8196077D10005B06E /* ImageGrid-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05403884196077D10005B06E /* ImageGrid-Info.plist */; };
+		054038C9196077D10005B06E /* ImageGridAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05403887196077D10005B06E /* ImageGridAppDelegate.m */; };
+		054038CA196077D10005B06E /* ImageGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05403889196077D10005B06E /* ImageGridCell.m */; };
+		054038CB196077D10005B06E /* ImageGridSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0540388B196077D10005B06E /* ImageGridSettingsController.m */; };
+		054038CC196077D10005B06E /* ImageGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0540388D196077D10005B06E /* ImageGridViewController.m */; };
+		054038CD196077D10005B06E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0540388E196077D10005B06E /* main.m */; };
+		054038CE196077D10005B06E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05403890196077D10005B06E /* Default-568h@2x.png */; };
+		054038CF196077D10005B06E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05403891196077D10005B06E /* InfoPlist.strings */; };
+		054038D0196077D10005B06E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05403893196077D10005B06E /* main.m */; };
+		054038D1196077D10005B06E /* NoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05403895196077D10005B06E /* NoteController.m */; };
+		054038D2196077D10005B06E /* Notes-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05403896196077D10005B06E /* Notes-Info.plist */; };
+		054038D3196077D10005B06E /* NotesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05403899196077D10005B06E /* NotesAppDelegate.m */; };
+		054038D4196077D10005B06E /* NotesFolderListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0540389B196077D10005B06E /* NotesFolderListController.m */; };
+		054038D5196077D10005B06E /* NotesSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0540389D196077D10005B06E /* NotesSettingsController.m */; };
+		054038D6196077D10005B06E /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054038A1196077D10005B06E /* SettingsController.m */; };
+		054038D7196077D10005B06E /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 054038A3196077D10005B06E /* Util.m */; };
+		054038D8196077D10005B06E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 054038A6196077D10005B06E /* AppDelegate.m */; };
+		054038D9196077D10005B06E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 054038A7196077D10005B06E /* Default-568h@2x.png */; };
+		054038DA196077D10005B06E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 054038A8196077D10005B06E /* Default.png */; };
+		054038DB196077D10005B06E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 054038A9196077D10005B06E /* Default@2x.png */; };
+		054038DC196077D10005B06E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 054038AA196077D10005B06E /* InfoPlist.strings */; };
+		054038DD196077D10005B06E /* InputTaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 054038AD196077D10005B06E /* InputTaskCell.m */; };
+		054038DE196077D10005B06E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 054038AE196077D10005B06E /* main.m */; };
+		054038DF196077D10005B06E /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054038AF196077D10005B06E /* Storyboard.storyboard */; };
+		054038E0196077D10005B06E /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 054038B1196077D10005B06E /* TaskCell.m */; };
+		054038E1196077D10005B06E /* tasks-example-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 054038B2196077D10005B06E /* tasks-example-114.png */; };
+		054038E2196077D10005B06E /* tasks-example-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 054038B3196077D10005B06E /* tasks-example-57.png */; };
+		054038E3196077D10005B06E /* Tasks-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 054038B4196077D10005B06E /* Tasks-Info.plist */; };
+		054038E4196077D10005B06E /* TasksController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054038B7196077D10005B06E /* TasksController.m */; };
+		054038E5196077D10005B06E /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 054038B8196077D10005B06E /* LICENSE.txt */; };
+		054038E6196077D10005B06E /* NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 054038B9196077D10005B06E /* NOTICE.txt */; };
+		054038E7196077D10005B06E /* README.mdown in Sources */ = {isa = PBXBuildFile; fileRef = 054038BA196077D10005B06E /* README.mdown */; };
+		054038F5196077E40005B06E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054038F4196077E40005B06E /* CFNetwork.framework */; };
+		054038F7196077EA0005B06E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054038F6196077EA0005B06E /* Security.framework */; };
+		054038F9196077F80005B06E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054038F8196077F80005B06E /* QuartzCore.framework */; };
+		054038FB196078040005B06E /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 054038FA196078040005B06E /* libc++.dylib */; };
+		054038FD1960780B0005B06E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 054038FC1960780B0005B06E /* libz.dylib */; };
+		4D0457AD3EA4436C8737DB63 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F630CCABBE4CD880AAA08F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +75,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 05403836195F94180005B06E;
 			remoteInfo = Playback;
+		};
+		054038E9196077D10005B06E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0540386D196077D10005B06E /* Datastore Examples.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D3B5891F1780FD18009E2333;
+			remoteInfo = Tasks;
+		};
+		054038EE196077D10005B06E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05403870196077D10005B06E /* Files Examples.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D38B636A162F418000F99830;
+			remoteInfo = Notes;
+		};
+		054038F0196077D10005B06E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05403870196077D10005B06E /* Files Examples.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1B78C380174ABD7800F9971E;
+			remoteInfo = ImageGrid;
+		};
+		054038F2196077D10005B06E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05403870196077D10005B06E /* Files Examples.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 317C8605178786FD004D0CB0;
+			remoteInfo = HelloDropbox;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -38,6 +118,83 @@
 		05403857195F944D0005B06E /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		05403859195F95690005B06E /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		0540385D195F97680005B06E /* PBMediaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBMediaViewController.swift; sourceTree = "<group>"; };
+		05403861196074E60005B06E /* PBDBSyncManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBDBSyncManager.swift; sourceTree = "<group>"; };
+		054038641960772A0005B06E /* Playback-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Playback-Bridging-Header.h"; sourceTree = "<group>"; };
+		05403869196077D10005B06E /* CHANGELOG.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.mdown; sourceTree = "<group>"; };
+		0540386A196077D10005B06E /* com.dropbox.Dropbox.docset */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = com.dropbox.Dropbox.docset; sourceTree = "<group>"; };
+		0540386B196077D10005B06E /* Dropbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Dropbox.framework; sourceTree = "<group>"; };
+		0540386D196077D10005B06E /* Datastore Examples.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Datastore Examples.xcodeproj"; sourceTree = "<group>"; };
+		05403870196077D10005B06E /* Files Examples.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Files Examples.xcodeproj"; sourceTree = "<group>"; };
+		05403874196077D10005B06E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		05403875196077D10005B06E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		05403876196077D10005B06E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		05403877196077D10005B06E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		05403878196077D10005B06E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0540387A196077D10005B06E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0540387B196077D10005B06E /* HelloDropbox-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HelloDropbox-Info.plist"; sourceTree = "<group>"; };
+		0540387C196077D10005B06E /* HelloDropbox-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloDropbox-Prefix.pch"; sourceTree = "<group>"; };
+		0540387D196077D10005B06E /* HelloViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloViewController.h; sourceTree = "<group>"; };
+		0540387E196077D10005B06E /* HelloViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloViewController.m; sourceTree = "<group>"; };
+		0540387F196077D10005B06E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05403881196077D10005B06E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		05403883196077D10005B06E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		05403884196077D10005B06E /* ImageGrid-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ImageGrid-Info.plist"; sourceTree = "<group>"; };
+		05403885196077D10005B06E /* ImageGrid-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImageGrid-Prefix.pch"; sourceTree = "<group>"; };
+		05403886196077D10005B06E /* ImageGridAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGridAppDelegate.h; sourceTree = "<group>"; };
+		05403887196077D10005B06E /* ImageGridAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGridAppDelegate.m; sourceTree = "<group>"; };
+		05403888196077D10005B06E /* ImageGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGridCell.h; sourceTree = "<group>"; };
+		05403889196077D10005B06E /* ImageGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGridCell.m; sourceTree = "<group>"; };
+		0540388A196077D10005B06E /* ImageGridSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGridSettingsController.h; sourceTree = "<group>"; };
+		0540388B196077D10005B06E /* ImageGridSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGridSettingsController.m; sourceTree = "<group>"; };
+		0540388C196077D10005B06E /* ImageGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageGridViewController.h; sourceTree = "<group>"; };
+		0540388D196077D10005B06E /* ImageGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageGridViewController.m; sourceTree = "<group>"; };
+		0540388E196077D10005B06E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05403890196077D10005B06E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		05403892196077D10005B06E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		05403893196077D10005B06E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05403894196077D10005B06E /* NoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteController.h; sourceTree = "<group>"; };
+		05403895196077D10005B06E /* NoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteController.m; sourceTree = "<group>"; };
+		05403896196077D10005B06E /* Notes-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Notes-Info.plist"; sourceTree = "<group>"; };
+		05403897196077D10005B06E /* Notes-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Notes-Prefix.pch"; sourceTree = "<group>"; };
+		05403898196077D10005B06E /* NotesAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesAppDelegate.h; sourceTree = "<group>"; };
+		05403899196077D10005B06E /* NotesAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesAppDelegate.m; sourceTree = "<group>"; };
+		0540389A196077D10005B06E /* NotesFolderListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesFolderListController.h; sourceTree = "<group>"; };
+		0540389B196077D10005B06E /* NotesFolderListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesFolderListController.m; sourceTree = "<group>"; };
+		0540389C196077D10005B06E /* NotesSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesSettingsController.h; sourceTree = "<group>"; };
+		0540389D196077D10005B06E /* NotesSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesSettingsController.m; sourceTree = "<group>"; };
+		0540389F196077D10005B06E /* FolderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FolderController.h; sourceTree = "<group>"; };
+		054038A0196077D10005B06E /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		054038A1196077D10005B06E /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
+		054038A2196077D10005B06E /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		054038A3196077D10005B06E /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		054038A5196077D10005B06E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		054038A6196077D10005B06E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		054038A7196077D10005B06E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		054038A8196077D10005B06E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		054038A9196077D10005B06E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		054038AB196077D10005B06E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		054038AC196077D10005B06E /* InputTaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputTaskCell.h; sourceTree = "<group>"; };
+		054038AD196077D10005B06E /* InputTaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputTaskCell.m; sourceTree = "<group>"; };
+		054038AE196077D10005B06E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		054038AF196077D10005B06E /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		054038B0196077D10005B06E /* TaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskCell.h; sourceTree = "<group>"; };
+		054038B1196077D10005B06E /* TaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskCell.m; sourceTree = "<group>"; };
+		054038B2196077D10005B06E /* tasks-example-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tasks-example-114.png"; sourceTree = "<group>"; };
+		054038B3196077D10005B06E /* tasks-example-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tasks-example-57.png"; sourceTree = "<group>"; };
+		054038B4196077D10005B06E /* Tasks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tasks-Info.plist"; sourceTree = "<group>"; };
+		054038B5196077D10005B06E /* Tasks-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tasks-Prefix.pch"; sourceTree = "<group>"; };
+		054038B6196077D10005B06E /* TasksController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksController.h; sourceTree = "<group>"; };
+		054038B7196077D10005B06E /* TasksController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksController.m; sourceTree = "<group>"; };
+		054038B8196077D10005B06E /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		054038B9196077D10005B06E /* NOTICE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE.txt; sourceTree = "<group>"; };
+		054038BA196077D10005B06E /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		054038F4196077E40005B06E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		054038F6196077EA0005B06E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		054038F8196077F80005B06E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		054038FA196078040005B06E /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		054038FC1960780B0005B06E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		4B7A284EA2934E1F849EEC85 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		E6F630CCABBE4CD880AAA08F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +202,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054038FD1960780B0005B06E /* libz.dylib in Frameworks */,
+				054038FB196078040005B06E /* libc++.dylib in Frameworks */,
+				054038F9196077F80005B06E /* QuartzCore.framework in Frameworks */,
+				054038F7196077EA0005B06E /* Security.framework in Frameworks */,
+				054038F5196077E40005B06E /* CFNetwork.framework in Frameworks */,
+				4D0457AD3EA4436C8737DB63 /* libPods.a in Frameworks */,
+				054038BD196077D10005B06E /* Dropbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +228,8 @@
 				05403839195F94180005B06E /* Playback */,
 				0540384A195F94180005B06E /* PlaybackTests */,
 				05403838195F94180005B06E /* Products */,
+				4B7A284EA2934E1F849EEC85 /* Pods.xcconfig */,
+				79401AC9958F41F69279A8EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +245,8 @@
 		05403839195F94180005B06E /* Playback */ = {
 			isa = PBXGroup;
 			children = (
+				05403867196077C10005B06E /* Libraries */,
+				05403860196074D30005B06E /* Classes */,
 				0540385C195F95F60005B06E /* Data */,
 				0540385B195F95F10005B06E /* Controller */,
 				0540383C195F94180005B06E /* AppDelegate.swift */,
@@ -87,6 +255,7 @@
 				0540383A195F94180005B06E /* Supporting Files */,
 				05403857195F944D0005B06E /* MainStoryboard_iPhone.storyboard */,
 				05403859195F95690005B06E /* MainStoryboard_iPad.storyboard */,
+				054038641960772A0005B06E /* Playback-Bridging-Header.h */,
 			);
 			path = Playback;
 			sourceTree = "<group>";
@@ -131,6 +300,184 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
+		05403860196074D30005B06E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				05403863196075460005B06E /* DBSync */,
+				05403861196074E60005B06E /* PBDBSyncManager.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		05403863196075460005B06E /* DBSync */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DBSync;
+			sourceTree = "<group>";
+		};
+		05403867196077C10005B06E /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				05403868196077D10005B06E /* dropbox-ios-sync-sdk-3.0.0 */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		05403868196077D10005B06E /* dropbox-ios-sync-sdk-3.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				05403869196077D10005B06E /* CHANGELOG.mdown */,
+				0540386A196077D10005B06E /* com.dropbox.Dropbox.docset */,
+				0540386B196077D10005B06E /* Dropbox.framework */,
+				0540386C196077D10005B06E /* Examples */,
+				054038B8196077D10005B06E /* LICENSE.txt */,
+				054038B9196077D10005B06E /* NOTICE.txt */,
+				054038BA196077D10005B06E /* README.mdown */,
+			);
+			path = "dropbox-ios-sync-sdk-3.0.0";
+			sourceTree = "<group>";
+		};
+		0540386C196077D10005B06E /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				0540386D196077D10005B06E /* Datastore Examples.xcodeproj */,
+				05403870196077D10005B06E /* Files Examples.xcodeproj */,
+				05403873196077D10005B06E /* HelloDropbox */,
+				05403880196077D10005B06E /* ImageGrid */,
+				0540388F196077D10005B06E /* Notes */,
+				0540389E196077D10005B06E /* Shared */,
+				054038A4196077D10005B06E /* Tasks */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		0540386E196077D10005B06E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				054038EA196077D10005B06E /* Tasks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05403871196077D10005B06E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				054038EF196077D10005B06E /* Notes.app */,
+				054038F1196077D10005B06E /* ImageGrid.app */,
+				054038F3196077D10005B06E /* HelloDropbox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05403873196077D10005B06E /* HelloDropbox */ = {
+			isa = PBXGroup;
+			children = (
+				05403874196077D10005B06E /* AppDelegate.h */,
+				05403875196077D10005B06E /* AppDelegate.m */,
+				05403876196077D10005B06E /* Default-568h@2x.png */,
+				05403877196077D10005B06E /* Default.png */,
+				05403878196077D10005B06E /* Default@2x.png */,
+				05403879196077D10005B06E /* InfoPlist.strings */,
+				0540387B196077D10005B06E /* HelloDropbox-Info.plist */,
+				0540387C196077D10005B06E /* HelloDropbox-Prefix.pch */,
+				0540387D196077D10005B06E /* HelloViewController.h */,
+				0540387E196077D10005B06E /* HelloViewController.m */,
+				0540387F196077D10005B06E /* main.m */,
+			);
+			path = HelloDropbox;
+			sourceTree = "<group>";
+		};
+		05403880196077D10005B06E /* ImageGrid */ = {
+			isa = PBXGroup;
+			children = (
+				05403881196077D10005B06E /* Default-568h@2x.png */,
+				05403882196077D10005B06E /* InfoPlist.strings */,
+				05403884196077D10005B06E /* ImageGrid-Info.plist */,
+				05403885196077D10005B06E /* ImageGrid-Prefix.pch */,
+				05403886196077D10005B06E /* ImageGridAppDelegate.h */,
+				05403887196077D10005B06E /* ImageGridAppDelegate.m */,
+				05403888196077D10005B06E /* ImageGridCell.h */,
+				05403889196077D10005B06E /* ImageGridCell.m */,
+				0540388A196077D10005B06E /* ImageGridSettingsController.h */,
+				0540388B196077D10005B06E /* ImageGridSettingsController.m */,
+				0540388C196077D10005B06E /* ImageGridViewController.h */,
+				0540388D196077D10005B06E /* ImageGridViewController.m */,
+				0540388E196077D10005B06E /* main.m */,
+			);
+			path = ImageGrid;
+			sourceTree = "<group>";
+		};
+		0540388F196077D10005B06E /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				05403890196077D10005B06E /* Default-568h@2x.png */,
+				05403891196077D10005B06E /* InfoPlist.strings */,
+				05403893196077D10005B06E /* main.m */,
+				05403894196077D10005B06E /* NoteController.h */,
+				05403895196077D10005B06E /* NoteController.m */,
+				05403896196077D10005B06E /* Notes-Info.plist */,
+				05403897196077D10005B06E /* Notes-Prefix.pch */,
+				05403898196077D10005B06E /* NotesAppDelegate.h */,
+				05403899196077D10005B06E /* NotesAppDelegate.m */,
+				0540389A196077D10005B06E /* NotesFolderListController.h */,
+				0540389B196077D10005B06E /* NotesFolderListController.m */,
+				0540389C196077D10005B06E /* NotesSettingsController.h */,
+				0540389D196077D10005B06E /* NotesSettingsController.m */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		0540389E196077D10005B06E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0540389F196077D10005B06E /* FolderController.h */,
+				054038A0196077D10005B06E /* SettingsController.h */,
+				054038A1196077D10005B06E /* SettingsController.m */,
+				054038A2196077D10005B06E /* Util.h */,
+				054038A3196077D10005B06E /* Util.m */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		054038A4196077D10005B06E /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				054038A5196077D10005B06E /* AppDelegate.h */,
+				054038A6196077D10005B06E /* AppDelegate.m */,
+				054038A7196077D10005B06E /* Default-568h@2x.png */,
+				054038A8196077D10005B06E /* Default.png */,
+				054038A9196077D10005B06E /* Default@2x.png */,
+				054038AA196077D10005B06E /* InfoPlist.strings */,
+				054038AC196077D10005B06E /* InputTaskCell.h */,
+				054038AD196077D10005B06E /* InputTaskCell.m */,
+				054038AE196077D10005B06E /* main.m */,
+				054038AF196077D10005B06E /* Storyboard.storyboard */,
+				054038B0196077D10005B06E /* TaskCell.h */,
+				054038B1196077D10005B06E /* TaskCell.m */,
+				054038B2196077D10005B06E /* tasks-example-114.png */,
+				054038B3196077D10005B06E /* tasks-example-57.png */,
+				054038B4196077D10005B06E /* Tasks-Info.plist */,
+				054038B5196077D10005B06E /* Tasks-Prefix.pch */,
+				054038B6196077D10005B06E /* TasksController.h */,
+				054038B7196077D10005B06E /* TasksController.m */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		79401AC9958F41F69279A8EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				054038FC1960780B0005B06E /* libz.dylib */,
+				054038FA196078040005B06E /* libc++.dylib */,
+				054038F8196077F80005B06E /* QuartzCore.framework */,
+				054038F6196077EA0005B06E /* Security.framework */,
+				054038F4196077E40005B06E /* CFNetwork.framework */,
+				E6F630CCABBE4CD880AAA08F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +485,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05403851195F94180005B06E /* Build configuration list for PBXNativeTarget "Playback" */;
 			buildPhases = (
+				6F0D4813AF934160B57CC22C /* Check Pods Manifest.lock */,
 				05403833195F94180005B06E /* Sources */,
 				05403834195F94180005B06E /* Frameworks */,
 				05403835195F94180005B06E /* Resources */,
+				E6125556B1CD4A61976A5C4F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,6 +547,16 @@
 			mainGroup = 0540382E195F94180005B06E;
 			productRefGroup = 05403838195F94180005B06E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0540386E196077D10005B06E /* Products */;
+					ProjectRef = 0540386D196077D10005B06E /* Datastore Examples.xcodeproj */;
+				},
+				{
+					ProductGroup = 05403871196077D10005B06E /* Products */;
+					ProjectRef = 05403870196077D10005B06E /* Files Examples.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				05403836195F94180005B06E /* Playback */,
@@ -206,14 +565,67 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		054038EA196077D10005B06E /* Tasks.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Tasks.app;
+			remoteRef = 054038E9196077D10005B06E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054038EF196077D10005B06E /* Notes.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Notes.app;
+			remoteRef = 054038EE196077D10005B06E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054038F1196077D10005B06E /* ImageGrid.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ImageGrid.app;
+			remoteRef = 054038F0196077D10005B06E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		054038F3196077D10005B06E /* HelloDropbox.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = HelloDropbox.app;
+			remoteRef = 054038F2196077D10005B06E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		05403835195F94180005B06E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0540385A195F95690005B06E /* MainStoryboard_iPad.storyboard in Resources */,
+				054038E2196077D10005B06E /* tasks-example-57.png in Resources */,
+				054038CF196077D10005B06E /* InfoPlist.strings in Resources */,
+				054038C2196077D10005B06E /* InfoPlist.strings in Resources */,
+				054038D2196077D10005B06E /* Notes-Info.plist in Resources */,
+				054038C3196077D10005B06E /* HelloDropbox-Info.plist in Resources */,
+				054038C6196077D10005B06E /* Default-568h@2x.png in Resources */,
+				054038C8196077D10005B06E /* ImageGrid-Info.plist in Resources */,
+				054038DA196077D10005B06E /* Default.png in Resources */,
+				054038C0196077D10005B06E /* Default.png in Resources */,
+				054038E6196077D10005B06E /* NOTICE.txt in Resources */,
+				054038DF196077D10005B06E /* Storyboard.storyboard in Resources */,
+				054038BC196077D10005B06E /* com.dropbox.Dropbox.docset in Resources */,
+				054038E5196077D10005B06E /* LICENSE.txt in Resources */,
+				054038DC196077D10005B06E /* InfoPlist.strings in Resources */,
 				05403858195F944D0005B06E /* MainStoryboard_iPhone.storyboard in Resources */,
+				054038BF196077D10005B06E /* Default-568h@2x.png in Resources */,
+				054038DB196077D10005B06E /* Default@2x.png in Resources */,
+				054038CE196077D10005B06E /* Default-568h@2x.png in Resources */,
+				054038C1196077D10005B06E /* Default@2x.png in Resources */,
+				054038D9196077D10005B06E /* Default-568h@2x.png in Resources */,
+				054038C7196077D10005B06E /* InfoPlist.strings in Resources */,
+				054038E3196077D10005B06E /* Tasks-Info.plist in Resources */,
 				05403842195F94180005B06E /* Images.xcassets in Resources */,
+				054038E1196077D10005B06E /* tasks-example-114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,14 +638,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6F0D4813AF934160B57CC22C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E6125556B1CD4A61976A5C4F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		05403833195F94180005B06E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054038E0196077D10005B06E /* TaskCell.m in Sources */,
+				054038CD196077D10005B06E /* main.m in Sources */,
+				054038DD196077D10005B06E /* InputTaskCell.m in Sources */,
 				05403840195F94180005B06E /* Playback.xcdatamodeld in Sources */,
+				054038D5196077D10005B06E /* NotesSettingsController.m in Sources */,
+				054038D3196077D10005B06E /* NotesAppDelegate.m in Sources */,
+				054038BB196077D10005B06E /* CHANGELOG.mdown in Sources */,
+				054038D4196077D10005B06E /* NotesFolderListController.m in Sources */,
+				054038D6196077D10005B06E /* SettingsController.m in Sources */,
+				054038D1196077D10005B06E /* NoteController.m in Sources */,
+				054038BE196077D10005B06E /* AppDelegate.m in Sources */,
+				054038DE196077D10005B06E /* main.m in Sources */,
 				0540383D195F94180005B06E /* AppDelegate.swift in Sources */,
+				054038E7196077D10005B06E /* README.mdown in Sources */,
+				054038CC196077D10005B06E /* ImageGridViewController.m in Sources */,
+				054038E4196077D10005B06E /* TasksController.m in Sources */,
+				054038C4196077D10005B06E /* HelloViewController.m in Sources */,
+				054038CB196077D10005B06E /* ImageGridSettingsController.m in Sources */,
+				05403862196074E60005B06E /* PBDBSyncManager.swift in Sources */,
+				054038C9196077D10005B06E /* ImageGridAppDelegate.m in Sources */,
+				054038D7196077D10005B06E /* Util.m in Sources */,
+				054038CA196077D10005B06E /* ImageGridCell.m in Sources */,
+				054038C5196077D10005B06E /* main.m in Sources */,
+				054038D0196077D10005B06E /* main.m in Sources */,
 				0540385E195F97680005B06E /* PBMediaViewController.swift in Sources */,
+				054038D8196077D10005B06E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +722,41 @@
 			targetProxy = 05403848195F94180005B06E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05403879196077D10005B06E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0540387A196077D10005B06E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		05403882196077D10005B06E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05403883196077D10005B06E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		05403891196077D10005B06E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05403892196077D10005B06E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		054038AA196077D10005B06E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				054038AB196077D10005B06E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0540384F195F94180005B06E /* Debug */ = {
@@ -337,23 +840,38 @@
 		};
 		05403852195F94180005B06E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B7A284EA2934E1F849EEC85 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Playback/dropbox-ios-sync-sdk-3.0.0",
+				);
 				INFOPLIST_FILE = Playback/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Playback/Playback-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		05403853195F94180005B06E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B7A284EA2934E1F849EEC85 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Playback/dropbox-ios-sync-sdk-3.0.0",
+				);
 				INFOPLIST_FILE = Playback/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Playback/Playback-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -412,6 +930,7 @@
 				05403853195F94180005B06E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05403854195F94180005B06E /* Build configuration list for PBXNativeTarget "PlaybackTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +939,7 @@
 				05403856195F94180005B06E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,0 +1,22 @@
+PODS:
+  - ActiveRecord (1.2.0):
+    - MKFoundationKit/Block (>= 1.0.0)
+    - MKFoundationKit/NSNumber (>= 1.0.0)
+    - RubySugar (>= 1.1.0)
+  - Dropbox-iOS-SDK (1.3.10)
+  - MKFoundationKit/Block (1.2.2)
+  - MKFoundationKit/NSNumber (1.2.2)
+  - RubySugar (1.2.4):
+    - MKFoundationKit/Block (>= 1.2.0)
+
+DEPENDENCIES:
+  - ActiveRecord (~> 1.2)
+  - Dropbox-iOS-SDK (~> 1.3)
+
+SPEC CHECKSUMS:
+  ActiveRecord: 226689a3212cadd0ce563317cb530b567250ca87
+  Dropbox-iOS-SDK: 13b2cc61670720b0223c6e96a3af92e43aa03763
+  MKFoundationKit: f8a268133483c1aa686f208d3944624cc0e68dd2
+  RubySugar: 686ba89acd2943cb9bc38c665b74ed9e7a58cef7
+
+COCOAPODS: 0.33.1

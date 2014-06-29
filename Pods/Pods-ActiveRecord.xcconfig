@@ -1,0 +1,1 @@
+PODS_ACTIVERECORD_OTHER_LDFLAGS = -framework CoreData
