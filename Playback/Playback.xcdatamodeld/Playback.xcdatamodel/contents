@@ -1,46 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6172.12" systemVersion="14A261i" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="PBMedia" syncable="YES">
-        <attribute name="airDate" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="14A343f" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PBMedia" representedClassName="PBMedia" syncable="YES">
+        <attribute name="availableDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="number" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="overview" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="state" optional="YES" attributeType="String" regularExpressionString="wanted|snatched|renameFailed|downloaded" syncable="YES"/>
+        <attribute name="remoteId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="type" optional="YES" attributeType="String" regularExpressionString="movie|tv" syncable="YES"/>
-        <attribute name="watchStatus" optional="YES" attributeType="String" regularExpressionString="watched|unwatched" syncable="YES"/>
-        <attribute name="year" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="watchStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="poster" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PBPoster" inverseName="movie" inverseEntity="PBPoster" syncable="YES"/>
         <relationship name="season" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PBSeason" inverseName="episodes" inverseEntity="PBSeason" syncable="YES"/>
-        <relationship name="still" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="PBPoster" inverseName="media" inverseEntity="PBPoster" syncable="YES"/>
+        <relationship name="still" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PBPoster" inverseName="episode" inverseEntity="PBPoster" syncable="YES"/>
+        <relationship name="torrents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PBTorrent" inverseName="media" inverseEntity="PBTorrent" syncable="YES"/>
     </entity>
-    <entity name="PBPoster" syncable="YES">
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    <entity name="PBPoster" representedClassName="PBPoster" syncable="YES">
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="media" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PBMedia" inverseName="still" inverseEntity="PBMedia" syncable="YES"/>
-        <relationship name="season" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PBSeason" inverseName="poster" inverseEntity="PBSeason" syncable="YES"/>
-        <relationship name="show" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PBShow" inverseName="poster" inverseEntity="PBShow" syncable="YES"/>
+        <relationship name="episode" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PBMedia" inverseName="still" inverseEntity="PBMedia" syncable="YES"/>
+        <relationship name="movie" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PBMedia" inverseName="poster" inverseEntity="PBMedia" syncable="YES"/>
     </entity>
-    <entity name="PBSeason" syncable="YES">
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    <entity name="PBSeason" representedClassName="PBSeason" syncable="YES">
         <attribute name="number" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="year" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <relationship name="episodes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PBMedia" inverseName="season" inverseEntity="PBMedia" syncable="YES"/>
-        <relationship name="poster" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="PBPoster" inverseName="season" inverseEntity="PBPoster" syncable="YES"/>
         <relationship name="show" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PBShow" inverseName="seasons" inverseEntity="PBShow" syncable="YES"/>
     </entity>
-    <entity name="PBShow" syncable="YES">
+    <entity name="PBSetting" representedClassName="PBSetting" syncable="YES">
+        <attribute name="key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PBShow" representedClassName="PBShow" syncable="YES">
         <attribute name="firstAired" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="remoteId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="remoteId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="poster" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="PBPoster" inverseName="show" inverseEntity="PBPoster" syncable="YES"/>
-        <relationship name="seasons" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="PBSeason" inverseName="show" inverseEntity="PBSeason" syncable="YES"/>
+        <relationship name="seasons" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PBSeason" inverseName="show" inverseEntity="PBSeason" syncable="YES"/>
+    </entity>
+    <entity name="PBTorrent" representedClassName="PBTorrent" syncable="YES">
+        <attribute name="magnet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="score" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="media" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PBMedia" inverseName="torrents" inverseEntity="PBMedia" syncable="YES"/>
     </entity>
     <elements>
-        <element name="PBShow" positionX="-63" positionY="-18" width="128" height="133"/>
-        <element name="PBMedia" positionX="-54" positionY="-9" width="128" height="223"/>
-        <element name="PBSeason" positionX="-36" positionY="9" width="128" height="133"/>
-        <element name="PBPoster" positionX="-18" positionY="27" width="128" height="118"/>
+        <element name="PBMedia" positionX="-63" positionY="-18" width="128" height="240"/>
+        <element name="PBPoster" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="PBSeason" positionX="-36" positionY="9" width="128" height="105"/>
+        <element name="PBSetting" positionX="18" positionY="63" width="128" height="75"/>
+        <element name="PBShow" positionX="-18" positionY="27" width="128" height="105"/>
+        <element name="PBTorrent" positionX="0" positionY="45" width="128" height="90"/>
     </elements>
 </model>

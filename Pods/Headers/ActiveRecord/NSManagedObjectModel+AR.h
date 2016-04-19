@@ -1,1 +1,0 @@
-../../ActiveRecord/Source/NSManagedObjectModel+AR.h

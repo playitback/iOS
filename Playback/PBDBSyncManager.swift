@@ -12,52 +12,64 @@ class PBDBSyncManager: NSObject {
 		
 	var accountManager:DBAccountManager!
 	var dataStore:DBDatastore?
-	var watchedEntities = String[]()
+	var watchedEntities = [String]()
 	
-	init() {
+	override init() {
 		// TODO: Load values from configuration
-		self.accountManager = DBAccountManager(appKey:"", secret:"")
+		accountManager = DBAccountManager(appKey: "", secret: "")
 		
-		if(self.accountManager.linkedAccount) {
-			self.dataStore = DBDatastore.openDefaultStoreForAccount(self.accountManager.linkedAccount, error: nil)
+		if(accountManager.linkedAccount != nil) {
+			dataStore = DBDatastore.openDefaultStoreForAccount(
+				self.accountManager.linkedAccount, error: nil)
 		}
 	}
  
-	func watchEntityWithName(name:String!) {
-		self.watchedEntities.append(name)
+	private func watchEntityWithName(name:String!) {
+		watchedEntities.append(name)
 	}
 	
-	func startObserving() {
-		if(!self.dataStore) {
+	private func startObserving() {
+		if(dataStore == nil) {
 			return;
 		}
 		
-		self.dataStore?.addObserver(self, block: {
-			if(self.dataStore?.status.incoming) {
+		dataStore?.addObserver(self, block: {
+			if(self.dataStore?.status.incoming != false) {
 				self.syncDataStore()
 			}
 		})
 	}
 	
-	func stopObserving() {
+	private func stopObserving() {
 		self.dataStore?.removeObserver(self)
 	}
 	
-	func syncDataStore() {
-		var error:DBError
-		var changes:NSDictionary = self.dataStore?.sync(error: error)
+	private func syncDataStore() {
+		var changes = dataStore?.sync(nil)
 		
-		if(changes) {
-			self.updateCoreDataWithDatastoreChanges(changes)
+		if(changes != nil) {
+			updateCoreDataWithDatastoreChanges(changes!)
 		}
 	}
 	
-	func updateCoreDataWithDatastoreChanges(changes:NSDictionary) {
-		changes.enumerateKeysAndObjectsUsingBlock({ (tableId:NSString.self, records:NSArray.self, stop:Boolean.self)
-			for(DBRecord record in records) {
-				
-			}
-		})
+	private func updateCoreDataWithDatastoreChanges(changes:NSDictionary) {
+		for (tableName, dbRecord) in changes {
+			updateModelWithRecord(tableName as NSString, record:
+				dbRecord as DBRecord)
+		}
+	}
+	
+	private func updateModelWithRecord(tableName:NSString, record:DBRecord) {
+		let remoteId:NSString = record.objectForKey("remoteId") as NSString
+		
+		let modelClass:NSObject.Type = NSClassFromString(
+			NSString(format: "PB%@", tableName)) as NSObject.Type
+		
+		if(modelClass.isSubclassOfClass(PBSyncableModel)) {
+			let modelInstance:PBSyncableModel = modelClass() as PBSyncableModel
+			
+			modelInstance.syncWithRemoteId(remoteId)
+		}
 	}
 	
 }

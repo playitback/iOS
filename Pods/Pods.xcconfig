@@ -1,6 +1,5 @@
-FRAMEWORK_SEARCH_PATHS = "${PODS_ROOT}/Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.10"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/ActiveRecord" "${PODS_ROOT}/Headers/Dropbox-iOS-SDK" "${PODS_ROOT}/Headers/MKFoundationKit" "${PODS_ROOT}/Headers/RubySugar"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/ActiveRecord" -isystem "${PODS_ROOT}/Headers/Dropbox-iOS-SDK" -isystem "${PODS_ROOT}/Headers/MKFoundationKit" -isystem "${PODS_ROOT}/Headers/RubySugar"
-OTHER_LDFLAGS = -ObjC -framework CoreData -framework DropboxSDK -framework QuartzCore -framework Security
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/ILMovieDB" "${PODS_ROOT}/Headers/MagicalRecord"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/AFNetworking" -isystem "${PODS_ROOT}/Headers/ILMovieDB" -isystem "${PODS_ROOT}/Headers/MagicalRecord"
+OTHER_LDFLAGS = -ObjC -framework CoreData -framework CoreGraphics -framework MobileCoreServices -framework Security -framework SystemConfiguration
 PODS_ROOT = ${SRCROOT}/Pods
